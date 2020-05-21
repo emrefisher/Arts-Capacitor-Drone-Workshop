@@ -1,0 +1,111 @@
+body {
+    background-color: #6A6C6E;
+    font-family: "Arial"
+}
+
+h1 {
+    color: white;
+    font-size: 18pt;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+h2 {
+    color: white;
+    font-size: 12pt;
+}
+
+button{
+	width: auto;
+	background-color: #6A6C6E;
+	display: inline-block;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+button:disabled{
+	width: auto;
+	background-color: #6A6C6E;
+	display: inline-block;
+    border: 2px solid gray;
+    color: gray;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#instructions{
+	margin-top: -20px;
+	margin-bottom: 20px;
+	font-size: 11pt;
+	width: 1400px;
+	color: #D3D3D3;
+}
+
+#clearButton{
+	margin-left: 0px ;
+}
+
+#sendButton{
+	margin-left: 10px ;
+}
+
+canvas{
+	width: 301px;
+	height: 301px;
+}
+
+.header{
+	float: left;
+	width: 1400;
+	padding: 5px;
+	overflow: auto;
+}
+
+.viewContainer {
+	float: left;
+	width: 640px;
+	padding: 5px;
+	overflow: auto;	
+}
+
+#container{
+	width: 1400px;
+	/*overflow: auto;*/
+}
+
+#canvas_xy{
+	width: 601px;
+	height: 301px;
+}
+
+#canvas_xz{
+	width: 601px;
+	height: 301px;
+}
+
+#canvas_yz{
+	width: 301px;
+	height: 301px;
+}
+
+#xy_view {
+	overflow: auto;
+}
+
+#xz_view{
+	overflow: auto;
+}
+
+#yz_view{
+	overflow: auto;
+}

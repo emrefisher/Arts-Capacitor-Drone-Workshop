@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>
+		Drone GUI
+	</title>
+	<link rel="stylesheet" type="text/css" href="drones.css">
+	<meta charset="utf-8">
+	<script src="drones.js"></script>
+</head>
+<body onload="init()">
+
+	<div id="header">
+		
+		<h1> Flightpath Creator 2.0</h1>
+
+		<div id="instructions">
+			<ul>
+				<li> The three grids below represent different views of your flight space. 
+				<li> To start a flightpath, add a point to any of the three grids below by double-clicking on the desired location in one of the grids.</li>
+				<li> When you want to move a previously added point, click and drag the point to its new location and release the mouse button.</li>
+				<li>If you want to clear your path, press the <i> Clear Path </i> button at the top of the screen.</li>
+				<li>When you are ready to export your path, press the <i> Create CSV </i> button at the top of the screen to download a CSV file of your flightpath.</li>
+			</ul>
+		</div>
+
+		<button disabled id="clearButton" onclick="clearPath()" class="button">Clear Path</button>
+		<button disabled id="sendButton" onclick="sendToCSV()" class="button">Create CSV</button>
+
+	</div>
+
+	<div id="container">
+		<div class = "viewContainer" id="xz_view">
+			<h2> Straight-On View (X,Z) </h2>
+			<canvas id="canvas_xz"></canvas>
+		</div> 
+
+		<div class = "viewContainer" id="yz_view">
+			<h2> Side View (Y,Z) </h2>
+			<canvas id="canvas_yz"></canvas>
+		</div>
+
+		<div class = "viewContainer" id = "xy_view">
+			<h2> Top-Down View (X,Y) </h2>
+			<canvas id="canvas_xy"></canvas>
+		</div>
+	</div>
+
+	
+	
+</body>
+</html>
